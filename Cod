@@ -1,0 +1,76 @@
+Q. 1
+Medium
+Unanswered
+
+Flag
+Qlik Sense Day 1 Assessment
+Title: Basic Sales Analysis in Qlik Sense
+
+Difficulty: Easy
+
+Marks: 10
+
+
+
+Topics Covered
+Qlik Sense setup and navigation
+Loading Excel data
+Data Manager
+Associative data model basics
+Dimensions and measures
+Basic visualizations
+Filters and selections
+
+Objective
+Create a simple Qlik Sense application using the provided Sales dataset and analyze sales performance by Region and Product Category.
+
+
+Dataset
+Use:
+
+Day1_Sales.xlsx
+
+Sheet name:
+
+Sales
+
+Fields
+SalesID
+Region
+Category
+Product
+Quantity
+SalesAmount
+
+
+Example structure:
+
+
+
+
+
+
+
+Tasks
+
+
+Task 1 — Create App and Load Data
+Create a Qlik Sense app named:
+
+Day 1 Sales Analysis
+
+Using Data Manager:
+
+Load Day1_Sales.xlsx
+Select the Sales sheet
+Verify that all fields are available
+
+
+Task 2 — Create Sales by Region Bar Chart
+Create a Bar Chart using:
+
+Dimension: Region
+Measure: Sum(SalesAmount)
+Requirements:
+
+Sho
