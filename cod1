@@ -1,0 +1,38 @@
+Practical Assessment – Qlik Analytics
+Topic: Visualizations, Join, Keep, Concatenate, Aggregate
+
+
+
+Assessment Objective
+The candidate must design and develop a Qlik Analytics application that demonstrates:
+
+Correct data loading and data modeling
+Proper and meaningful usage of Concatenate, Join, Keep, and Aggregation
+Creation of interactive visualizations
+Implementation of drill-down analysis
+Clear storytelling using insights from the dashboard
+No hints, scripts, expressions, or configuration steps are provided.
+
+
+
+Input Data Files
+(u can use ur own datastes )
+
+
+File 1: sales.csv
+OrderID,ProductID,Region,SalesAmount
+101,P01,South,5000
+102,P02,North,7000
+103,P01,South,3000
+104,P03,East,8000
+105,P02,North,4000
+File 2: products.csv
+ProductID,ProductName,Category
+P01,Laptop,Electronics
+P02,Mobile,Electronics
+P03,Chair,Furniture
+File 3: targets.csv
+Region,TargetAmount
+South,7000
+North,10000
+East,9000
