@@ -1,0 +1,93 @@
+Sum({<Region = {'West'}>} Sales)
+Sum({<Region = {'West','East'}>} Sales)
+
+
+
+
+sum({  1 <Region={'East'}> } Sales )
+
+
+sum({Category} Sales)
+
+
+sum( TOTAL Sales)
+
+
+Sum({1} TOTAL Sales)
+
+Sum({<Region = {'West'}, Category = {'Furniture'}>} Sales)
+
+Sum(
+    {$<Region={'West'}>}
+    +
+    {$<Category={'Furniture'}>}
+    Sales
+)
+exclude
+
+Sum({<Region = {'West'}>} Sales)
+
+
+
+
+Sales for the latest date in the dataset, dynamically
+
+Sum({<Order_Date = {"$(=Max(Order_Date))"}>} Sales)
+
+
+Sum({<Year = {"$(=Max(Year)-1)"}>} Sales)
+
+
+
+
+
+Sum(Sales)	Sales for each Sub-Category row (normal)
+Sum(TOTAL Sales)	Grand Total (ignores both Category & Sub-Category)
+Sum(TOTAL <Category> Sales)	Category-wise Total (ignores only Sub-Category) ✅ This is what you need
+
+
+
+
+
+
+Current Year vs Last Year Sales	Sum({<Year={"$(=Max(Year))"}>} Sales) vs Sum({<Year={"$(=Max(Year)-1)"}>} Sales)
+Sales where Profit is Negative	Sum({<Profit = {"<0"}>} Sales)
+Sales for Selected Customers Only	Sum({<Customer_Name = P(Customer_Name)>} Sales)
+
+
+Year-to-Date (YTD) Sales
+text
+
+Sum({<Order_Date = {">=$(=YearStart(Max(Order_Date))) <=$(=Max(Order_Date))"}>} Sales)
+
+
+
+Last 30 Days Sales (Dynamic)
+Sum({<Order_Date = {">=$(=Max(Order_Date)-30)<=$(=Max(Order_Date))"}>} Sales)
+
+
+Union
+
+
+sum({<Region +={'Central'}>} Sales)
+
+
+
+sum( { <Region +={'Central'}> } Sales)
+
+
+Exclusion
+
+
+sum( { <Region -={'Central'}> } Sales)
+
+
+
+
+
+Intersection (*)
+
+text
+
+Sum({<Region = {'West'}> * <Category = {'Furniture'}>} Sales)
+
